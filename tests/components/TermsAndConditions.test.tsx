@@ -26,14 +26,9 @@ describe('TermsAndConditions', () => {
       button,
     } = renderComponent()
 
-    expect(heading).toBeInTheDocument();
     expect(heading).toHaveTextContent(/terms/i)
     expect(heading).toHaveTextContent(/conditions/i)
-
-    expect(checkbox).toBeInTheDocument();
     expect(checkbox).not.toBeChecked();
-
-    expect(button).toBeInTheDocument();
     expect(button).toBeDisabled();
   })
 
