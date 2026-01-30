@@ -1,5 +1,5 @@
-import { it, describe, expect, afterEach, vi } from 'vitest';
-import { render, screen, cleanup } from '@testing-library/react'
+import { it, describe, expect } from 'vitest';
+import { render, screen } from '@testing-library/react'
 import '@testing-library/jest-dom/vitest';
 import TagList from '../../src/components/TagList';
 
