@@ -1,10 +1,10 @@
-import { it, expect, describe } from 'vitest'
+import { it, describe } from 'vitest'
+import { db } from './mocks/db'
 
 describe('Sample Test Suite', () => {
-  it('should', async () => {
-    const res = await fetch('/categories');
-    const data = await res.json();
-    console.log(data);
-    expect(data).toHaveLength(3);
+  it('should',  () => {
+    // Example of force setting a propert to Apple.
+    const product = db.product.create({ name: 'Apple' });
+    console.log(product);
   })
 })
